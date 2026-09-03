@@ -1,0 +1,28 @@
+name: Frontend Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'starter/frontend/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        working-directory: starter/frontend
+        run: |
+          docker build \
+            --build-arg=REACT_APP_MOVIE_API_URL=http://localhost:5000 \
+            --tag=mp-frontend:latest .
+
+      - name: Validate Kubernetes manifests
+        working-directory: starter/frontend
+        run: kubectl kustomize k8s/
