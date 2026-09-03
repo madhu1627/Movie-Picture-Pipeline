@@ -20,6 +20,6 @@ jobs:
         working-directory: starter/backend
         run: docker build --tag=mp-backend:latest .
 
-      - name: Deploy Kubernetes manifests
+      - name: Validate Kubernetes manifests
         working-directory: starter/backend
-        run: kubectl apply -k k8s/
+        run: kubectl kustomize k8s/
