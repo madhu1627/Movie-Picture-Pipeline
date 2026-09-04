@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: backend
+          image: mp-backend:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 5000
