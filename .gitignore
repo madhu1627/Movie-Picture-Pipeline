@@ -1,1 +1,3 @@
-setup/terraform/.terraform.lock.hcl
+setup/terraform/.terraform/
+setup/terraform/terraform.tfstate
+setup/terraform/terraform.tfstate.backup
