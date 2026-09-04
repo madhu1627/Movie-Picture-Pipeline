@@ -1,4 +1,24 @@
-# Movie Picture Pipeline
+# Student Note
+
+GitHub Repository:
+https://github.com/madhu1627/Movie-Picture-Pipeline
+
+Frontend URL:
+https://scaling-cod-975qq99wrqwxh76vv-3000.app.github.dev/
+
+Backend URL:
+https://scaling-cod-975qq99wrqwxh76vv-5000.app.github.dev/movies
+
+## Project Evidence
+
+The `screenshots/` folder contains screenshots of:
+- Backend Continuous Integration
+- Frontend Continuous Integration
+- Backend Continuous Deployment
+- Frontend Continuous Deployment
+- All four successful GitHub Actions workflows
+- Backend `/movies` API
+- Frontend Movie List# Movie Picture Pipeline
 
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
 
